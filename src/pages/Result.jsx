@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { resultdata } from "../assets/resultdata";
+import KakaoShareButton from "../components/KakaoShareButton";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -109,6 +110,7 @@ const Result = () => {
           <Button variant="warning" onClick={handleClickButton}>
             테스트 다시 시작하기
           </Button>
+          <KakaoShareButton data={resultData} />
         </ButtonGroup>
       </Contents>
     </Wrapper>
